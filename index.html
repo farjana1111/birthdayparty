@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO THE PARTY</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-image: url(bggif4.gif);
+            background-size: cover;
+            background-position: center;
+            /* background: #000000; */
+            /* transition: 5s ease; */
+            align-items: last baseline;
+
+            animation: fadeIn 15s;
+  -webkit-animation: fadeIn 15s;
+  -moz-animation: fadeIn 15s;
+  -o-animation: fadeIn 15s;
+  -ms-animation: fadeIn 15s;
+            
+        }
+
+
+        
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+        .bb1{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: last baseline;
+            justify-content: center;
+            background-image: url(body1.jpg);
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            
+
+            
+            
+            
+
+        }
+
+        @keyframes fade {
+          background  {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+          
+
+
+
+
+        .bb2{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: last baseline;
+            justify-content: center;
+            background-image: url(body1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+            animation: fadeIn 15s;
+  -webkit-animation: fadeIn 15s;
+  -moz-animation: fadeIn 15s;
+  -o-animation: fadeIn 15s;
+  -ms-animation: fadeIn 15s;
+
+        }
+
+     
+
+        .bodybg{
+            background-color: rgb(50, 13, 218);
+      
+        }
+
+        .candle {
+            width: 4em;
+            height: 12em;
+            font-size: 7px;
+            background: linear-gradient(
+                orange,
+                darkorange,
+                sienna,
+                saddlebrown 50%,
+                rgb(255, 0, 0),
+                rgba(255, 255, 255, 0.251)
+            );
+            
+            box-shadow: inset 2em -3em 5em rgba(0, 0, 0, 0.4),
+                inset -2em 0 54m rgba(0, 0, 0, 0.4);
+            border-radius: 10em / 4em;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            top: 10em;
+        }
+
+        .candle::before {
+            content: '';
+            position: absolute;
+            width: inherit;
+            height: 5em;
+            border: 0.2em solid darkorange;
+            box-sizing: border-box;
+            border-radius: 50%;
+             background: linear-gradient(
+                #444,
+                orange,
+                saddlebrown,
+                sienna,
+                darkorange
+            ); 
+            filter: opacity(0.7);
+        }
+
+        .thread {
+            position: absolute;
+            width: 0.6em;
+            height: 3.6em;
+            top: -1.8em;
+            background: linear-gradient(
+                #111,
+                black,
+                orange 90%
+            );
+            border-radius: 40% 40% 0 0;
+        }
+
+        .flames {
+            position: absolute;
+            width: 2.4em;
+            display: none;
+            transition: opacity 5s ease; /* Added smooth transition */
+        }
+
+        .flames::before {
+            content: '';
+            position: absolute;
+            width: inherit;
+            height: 6em;
+            background-color: royalblue;
+            top: -4em;
+            border-radius: 50% 50% 35% 35%;
+            border: 0.2em solid dodgerblue;
+            box-sizing: border-box;
+            filter: opacity(0.7);
+        }
+
+        .flames::after {
+            content: '';
+            position: absolute;
+            width: inherit;
+            height: 12em;
+            top: -12em;
+            background: linear-gradient(white 80%, transparent);
+            border-radius: 50% 50% 20% 20%;
+            box-shadow: 0 -0.6em 0.4em darkorange;
+            animation: enlarge 10s linear ,
+                move 6s linear infinite;
+        }
+
+        @keyframes move {
+            0%, 100% {
+                transform: rotate(2deg);
+            }
+            50% {
+                transform: rotate(-2deg);
+            }
+        }
+
+        @keyframes enlarge {
+            0%{
+                height: 1em;
+                top: -1em;
+                .glow{
+                    opacity: 10%;
+                }
+                
+
+            }
+            50% {
+                height: 14em;
+                top: -13em;
+            }
+             100% {
+                height: 12em;
+                top: -12em;
+            }
+            
+        }
+
+        .glow {
+            position: absolute;
+            width: 10em;
+            height: 18em;
+            background-color: orangered;
+            border-radius: 50%;
+            top: -17em;
+            filter: blur(6em);
+            animation: blink 500ms infinite;
+        }
+
+        @keyframes blink {
+            to {
+                filter: blur(6em) opacity(0.8);
+            }
+        }
+
+        #smoke{
+           
+           
+           
+           
+            
+        }
+
+        .smoking{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            /* background-color: yellow; */
+
+            background-image: url("hearts.gif");
+            
+            /* You can replace this with your own smoke image */
+
+            animation: smokeAnimation 5s linear infinite ;
+           
+        }
+
+
+        .box{
+            position: absolute;
+            color: red;
+            font-size: 4rem;
+            height: 5rem;
+            width: 4rem;
+            /* background-color: aqua; */
+
+           
+            animation: smokeAnimation 5s linear infinite ;
+            
+
+            
+        }
+
+        #imf{
+            position: absolute;
+            height: 0;
+            width: 0;
+            
+
+           
+
+
+        }
+
+        img{
+            position: absolute;
+            height: 5rem;
+            width: 4rem;
+
+            opacity: 0.2;
+            
+        }
+
+        @keyframes smokeAnimation {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            25% {
+                transform: translateY(-100%);
+                opacity: 0.4;
+            }
+            50% {
+                transform: translateY(-100%);
+                opacity: 0.7;
+            }
+            75% {
+                transform: translateY(-100%);
+                opacity: 0.4;
+            }
+            100% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+
+        }
+
+        .contain2{
+            display: flex;
+            /* flex-direction: column; */
+            /* margin-top: 6rem; */
+            justify-content: space-between;
+            
+        }
+
+        button{
+            height: 4rem;
+            width: 10rem;
+            margin: 1rem;
+            background-color:transparent;
+            border: none;
+            text-align: center;
+
+
+
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color: red; */
+
+            /* animation: fade 19s linear; */
+
+        }
+
+        .text{
+            color: white;
+            text-transform: uppercase;
+            animation: fade 5s linear;
+            text-align: center;
+
+            animation: fadeIn 15s;
+            padding: 2rem;
+
+
+        }
+
+        h2{
+            font-weight: 600;
+            font-size: 30px;
+            line-height:65px;
+            letter-spacing: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: 400%;
+            animation: move 5s ease infinite;
+            background-image: linear-gradient( 68.7deg,  rgba(29,173,235,1) 13.2%, rgba(137,149,250,1) 29.8%, rgba(229,109,212,1) 48.9%, rgba(255,68,128,1) 68.2%, rgba(255,94,0,1) 86.4% );
+            
+        }
+
+        @keyframes move {
+            0%,100%{
+                background-position: 200% 0%;
+            }
+
+            50%{
+                background-position: 0% 200%;
+            }
+        }
+
+       
+           
+        
+
+        @keyframes fade{
+            0%{
+                opacity: 0%;
+
+            }
+
+            30%{
+                opacity: 30%;
+
+            }
+
+            60%{
+                opacity: 50%;
+
+            }
+
+            80%{
+                opacity: 80%;
+
+            }
+            100%{
+                opacity: 100%;
+
+            }
+        }
+
+        .cake{
+            color: green;
+            height: 23rem;
+            width: 25rem;
+            /* background: #b60000; */
+            background-image: url("cake5.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        #start{
+            /* height: 6rem; */
+            width: 8rem;
+            background-image: url(stk.gif);
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        #stop{
+            /* height: 6rem; */
+            width: 8rem;
+            background-image: url(stop.gif);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: red;
+        }
+
+        .imge_stk
+        {
+            height: 6rem;
+            width: 9rem;
+            z-index: 1;
+        }
+
+        /* ========================================================================== */
+
+
+        @media only screen and (max-width: 600px){
+
+            .cake{
+            color: green;
+            height: 16rem;
+            width: 18rem;
+            /* background: #b60000; */
+            background-image: url("cake5.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+
+        
+            h2{
+                padding: 2rem 4rem;
+                /* margin-bottom: 4rem; */
+            font-weight: 600;
+            font-size: 20px;
+            line-height:65px;
+            letter-spacing: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: 400%;
+            animation: move 5s ease infinite;
+            background-image: linear-gradient( 68.7deg,  rgba(29,173,235,1) 13.2%, rgba(137,149,250,1) 29.8%, rgba(229,109,212,1) 48.9%, rgba(255,68,128,1) 68.2%, rgba(255,94,0,1) 86.4% );
+            
+            
+        }
+
+        h3{
+                padding: 2rem 3rem;
+                /* margin-bottom: 2rem; */
+            font-weight: 600;
+            font-size: 24px;
+            line-height:65px;
+            letter-spacing: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-size: 400%;
+            animation: move 5s ease infinite;
+            background-image: linear-gradient( 68.7deg,  rgb(255, 255, 255) 13.2%, rgb(147, 147, 147) 29.8%, rgb(0, 179, 255) 48.9%, rgb(0, 0, 0) 68.2%, rgb(66, 255, 192) 86.4% );
+            
+            
+        }
+
+        }
+
+        
+
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text" >
+            <h2 id="text"></h2>
+
+        </div>
+
+    <div class="contain">
+       
+        <div class="candle" id="candle"  onclick="startCandle(),showAlertAfter10Seconds()" ondblclick="stopCandle()" >
+            <span class="thread"  ></span>
+            <span class="flames"   >
+                <span class="glow"></span>
+            </span>
+            <span class="smoke-waves" id="smoke"></span>
+            <div class="box" id="box"></div>
+        </div>
+
+        
+
+    </div>
+    <div class="cake"   >
+        
+    </div>
+    <!-- <div class="contain2">
+        <button   onclick="stopCandle()" id="stop"></button>
+        <button  onclick="startCandle(),showAlertAfter10Seconds()"  id="start"></button>
+       
+    </div> -->
+</div>
+   
+
+    <audio id="candleSound" loop>
+        <source src="bgm.mp3" type="audio/mp3">
+       
+    </audio>
+
+
+    <audio id="clapSound" loop>
+        <source src="claps.mp3" type="audio/mp3">
+       
+    </audio>
+
+    <script>
+
+
+ 
+ var userName = prompt("What is your name?");
+
+ var password= prompt("enter the password ?")
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+// Check if the name is "gousiya"
+ if(password && password.toLowerCase() !== "happy birthday gousiya" ) {
+  var reEnter= prompt("Wrong password "+ userName+ " Enter Correct password");
+
+  if (reEnter!=="happy birthday gousiya"){
+    alert("two chances left ");
+       reEnter= prompt("Enter Correct Password "+userName );
+
+       if(reEnter!=="happy birthday gousiya"){
+        alert("one chance left ");
+       reEnter= prompt("Enter Correct Password "+userName);
+
+       if(reEnter!=="happy birthday gousiya"){
+        alert("Sorry "+userName+" Password Not Correct ");
+
+         window.location.href = "error.html";
+
+        
+       }
+
+ 
+    }
+    
+}
+}
+
+
+
+else if( password && password.toLowerCase() === "happy birthday gousiya" ) {
+    alert("Hello, " + userName + " welcome to the party ")
+    
+}
+
+else if(!userName || !password ){
+   
+    window.location.href = "index.html";
+    
+
+}
+
+// Continue with the rest of your code for the page
+
+// You can add additional content or logic for the page here
+
+
+
+       //
+
+       document.getElementById("text").innerText="welcome to the party "+userName
+
+
+        
+
+        function startCandle() {
+            const flames = document.querySelector('.flames');
+            flames.style.display = 'block';
+            candleSound.play();
+            // document.body.style.backgroundColor="pink";
+
+            document.getElementById("text").innerText=" "
+
+
+
+           
+            document.body.classList.add("bb1");
+
+
+
+
+            setTimeout(() => {
+                candleInterval = setInterval(blinkGlow, 500);
+            }, 2000);
+
+
+            alertTimeout = setTimeout(() => {
+            showAlertAndStopCandle();
+        }, 15000);
+        }
+
+        function showAlertAndStopCandle() {
+
+        // Show an alert after 10 seconds
+
+
+        if(userName==="gousiya"){
+            alert("Please blow the candle, aunty!");
+
+        }
+        else if(userName!=="gousiya"){
+            alert("put your hands together for birth girl");
+
+
+        }
+       
+
+        // Set another timeout to stop the candle after 2 seconds of closing the alert
+        setTimeout(() => {
+            stopCandle();
+        }, 1500);
+    }
+
+        function stopCandle() {
+            const flames = document.querySelector('.flames');
+            // const smokeWaves = document.querySelector('.smoke-waves');
+
+            document.body.classList.add("bb2");
+            
+            flames.style.display = 'none';
+            clearInterval(candleInterval);
+
+            document.getElementById("text").innerHTML="<h3>happy birth day Gousiya aunty </h3>";
+
+
+
+            document.getElementById("box").innerHTML="<img src='monophy.gif'>";
+            
+
+            // Show animated smoke waves
+            document.getElementById("smoke").classList.add("smoking");
+
+
+
+            setTimeout(function () {
+        window.location.href = "demo.html";
+    }, 10000);
+
+    clapSound.play();
+
+
+
+        }
+
+        function blinkGlow() {
+            const glow = document.querySelector('.glow');
+            glow.style.filter = 'blur(6em) opacity(0.8)';
+            setTimeout(() => {
+                glow.style.filter = 'blur(6em)';
+            }, 250);
+        }
+
+
+        // Show alert after 10 seconds of opening the page
+    setTimeout(function() {
+      alert("please click on the candle");
+    }, 10000);
+
+    // Function to show alert after 10 seconds when the "Start Candle" button is clicked
+    // function showAlertAfter10Seconds() {
+    //   setTimeout(function() {
+    //     alert("please click on candle ");
+    //   }, 6000);
+    // }
+
+
+    </script>
+</body>
+</html>
